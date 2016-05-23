@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo "$@" | bc -l
+declare -i i=${1:-$(</dev/stdin)};
+echo "$i" | bc -l
